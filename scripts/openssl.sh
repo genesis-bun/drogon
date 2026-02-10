@@ -2,16 +2,16 @@
 
 # Generate SSL certificates for Drogon HTTPS server
 
-mkdir -p ssl
+mkdir -p lib/ssl
 
 # Generate self-signed certificate
 openssl req -x509 -newkey rsa:4096 \
-    -keyout ssl/server.key \
-    -out ssl/server.crt \
+    -keyout lib/ssl/server.key \
+    -out lib/ssl/server.crt \
     -days 365 \
     -nodes \
-    -subj "/C=US/ST=State/L=City/O=Development/CN=localhost"
+    -subj "/C=US/ST=State/L=City/O=Development/CN=drogo"
 
 echo "SSL certificates generated:"
-echo "  ssl/server.crt"
-echo "  ssl/server.key"
+echo "  lib/ssl/server.crt"
+echo "  lib/ssl/server.key"

@@ -570,7 +570,7 @@ FodyWeavers.xsd
 *.pem
 *.p12
 *.pfx
-lib/ssl/
+**/ssl/
 ssl/
 
 # Build directories
