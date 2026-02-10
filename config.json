@@ -1,0 +1,26 @@
+{
+    "listeners": [
+        {
+            "address": "0.0.0.0",
+            "port": 80,
+            "https": false
+        }
+    ],
+    "db_clients": [
+        {
+            "name": "",
+            "rdbms": "postgresql",
+            "host": "127.0.0.1",
+            "port": 5432,
+            "dbname": "test",
+            "user": "styles",
+            "passwd": "",
+            "is_fast": false,
+            "connection_number": 1,
+            "filename": ""
+        }
+    ],
+    "app": {
+        "document_root": "../src/dist"
+    }
+}
