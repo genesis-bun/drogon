@@ -1,2 +1,2 @@
-echo "⚡ Server running on port 3000"
+echo "⚡ Server started.."
 cd build && ./drogo
