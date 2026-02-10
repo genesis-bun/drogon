@@ -1,9 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/intellij+all,visualstudio,visualstudiocode,cmake,c,c++
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,visualstudio,visualstudiocode,cmake,c,c++
 
-build/
-dist/
-
 ### C ###
 # Prerequisites
 *.d
@@ -372,7 +369,7 @@ DocProject/Help/Html2
 DocProject/Help/html
 
 # Click-Once directory
-publish/
+
 
 # Publish Web Output
 *.[Pp]ublish.xml
@@ -562,3 +559,40 @@ FodyWeavers.xsd
 *.tlog
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij+all,visualstudio,visualstudiocode,cmake,c,c++
+
+# ============================================
+# Custom additions for Drogon C++ Server
+# ============================================
+
+# SSL Certificates and Keys (NEVER commit these!)
+*.crt
+*.key
+*.pem
+*.p12
+*.pfx
+lib/ssl/
+ssl/
+
+# Build directories
+build/
+cmake-build-*/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Database files (if any)
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+access.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
